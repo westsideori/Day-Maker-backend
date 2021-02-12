@@ -1,0 +1,2 @@
+class DayAttractionsController < ApplicationController
+end
