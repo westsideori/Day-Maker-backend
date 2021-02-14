@@ -103,19 +103,4 @@ Restaurant.create(
     image: "https://upload.wikimedia.org/wikipedia/commons/4/4a/NathansHotDog-3_%2848034232387%29.jpg"
 )
 
-Day.create(
-    id: 1,
-    user_id: 1
-)
 
-
-DayRestaurant.create(
-    day_id: 1,
-    restaurant_id: 1
-)
-
-
-DayAttraction.create(
-    day_id: 1,
-    attraction_id: 1
-)

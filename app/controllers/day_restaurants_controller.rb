@@ -1,7 +1,8 @@
 class DayRestaurantsController < ApplicationController
 
     def create
-        days_restaurant = DayRestaurant.create(day_restaurant_params)
+        day_restaurant = DayRestaurant.create(day_restaurant_params)
+        render json: day_restaurant
     end
 
     def update

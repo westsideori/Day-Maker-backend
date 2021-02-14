@@ -14,6 +14,15 @@ class DaysController < ApplicationController
 
     def create
         day = Day.create(day_params)
+        day_breakfast = DayRestaurant.create(day_id: day.id, restaurant_id: Restaurant.where(category: "breakfast").sample.id)
+        day_lunch = DayRestaurant.create(day_id: day.id, restaurant_id: Restaurant.where(category: "lunch").sample.id)
+        day_dinner = DayRestaurant.create(day_id: day.id, restaurant_id: Restaurant.where(category: "dinner").sample.id)
+        3.times do 
+            DayAttraction.create(day_id: day.id, attraction_id: Attraction.all.sample.id)
+        end
+        # day_attraction2 = DayAttraction.create(day_id: day.id, attraction_id: Attraction.all.sample.id)
+        # day_attraction3 = DayAttraction.create(day_id: day.id, attraction_id: Attraction.all.sample.id)
+        render json: day
     end
 
     private

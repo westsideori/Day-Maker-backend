@@ -1,7 +1,8 @@
 class DayAttractionsController < ApplicationController
 
     def create
-        days_attraction = DayAttraction.create(day_attraction_params)
+        day_attraction = DayAttraction.create(day_attraction_params)
+        render json: day_attraction
     end
 
     def update
