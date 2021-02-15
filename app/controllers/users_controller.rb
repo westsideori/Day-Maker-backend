@@ -28,6 +28,11 @@ class UsersController < ApplicationController
         render json: current_user
     end
 
+    def days
+        user_days = Day.where(user_id: 1)
+        render json: user_days
+    end
+
     # def delete
     #     users = User.all
     #     user = User.find(params[:id])

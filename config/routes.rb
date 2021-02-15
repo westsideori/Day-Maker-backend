@@ -18,16 +18,23 @@ Rails.application.routes.draw do
 
   get "/attractions", to: 'attractions#index'
   get "/attractions/:id", to: 'attractions#show'
+  get "/attractions/hour/:hour", to: 'attractions#beef'
 
   get "/days", to: "days#index"
   get "/days/:id", to: 'days#show'
   post "/days", to: 'days#create'
+  delete "/days/:id", to: "days#destroy"
 
+  get "/day_restaurants", to: "day_restaurants#index"
   post "/day_restaurants", to: "day_restaurants#create"
   patch "/day_restaurants/:id", to: "day_restaurants#update"
 
+  get "/day_attractions", to: "day_attractions#index"
   post "/day_attractions", to: "day_attractions#create"
   patch "/day_attractions/:id", to: "day_attractions#update"
+
+  get "/users/1/days", to: "users#days"
+  
 
 
 

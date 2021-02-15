@@ -1,5 +1,10 @@
 class DayRestaurantsController < ApplicationController
 
+    def index
+        day_restaurants = DayRestaurant.all
+        render json: day_restaurants
+    end
+
     def create
         day_restaurant = DayRestaurant.create(day_restaurant_params)
         render json: day_restaurant
@@ -8,6 +13,7 @@ class DayRestaurantsController < ApplicationController
     def update
         day_restaurant = DayRestaurant.find(params[:id]) 
         day_restaurant.update(params.permit(:restaurant_id))
+        render json: day_restaurant
     end
 
     private

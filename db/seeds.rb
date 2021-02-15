@@ -2,16 +2,16 @@
 User.create( name: "Ori", username: "Ori123", password: "abc123")
 User.create( name: "June", username: "June123", password: "abc123")
 
-Attraction.create( name: "Central Park", location: "Central Park, 56th ave", description: "Very relaxing walk in the park", category: "Park", image: "https://media.npr.org/assets/img/2020/10/23/gettyimages-1221103600_wide-2017b49a7088bca4461597719ac0989cf1e027c2-s800-c85.jpg")
-Attraction.create( name: "Citi Field", location: "Flushing, NY", description: "Great stadium to see the Mets lose!", category: "Sports stadium", image: "https://populous.com/wp-content/uploads/2018/01/POP_05_2647_00_N197_medium.jpg")
-Attraction.create( name: "Cooking with Karen", location: "304 32nd ave, manhattan", description: "Cook with your friends or your family members!", category: "Cooking class", image: "https://www.travelwisconsin.com/uploads/medialibrary/e5/e5584597-ff55-4a52-b7cd-25896497e383-cooking-classes-header.jpg?preset=interior-slider-desktop")
-Attraction.create( name: "Museum of Natural History", location: "Upper West Side", description: "Where the dinosaurs and caveman lives", category: "Museum", image: "https://www.amnh.org/var/ezflow_site/storage/images/media/amnh/images/join-and-support/join-support-redesign/plan-your-visit/plan-your-visit-revisions/amnh-plan-your-visit-dino-1024-512/2756409-2-eng-US/amnh-plan-your-visit-dino-1024-512.jpg")
-Attraction.create( name: "Ballroom Dancing", location: "Union square park, 14th street", description: "Dance your heart out", category: "Park", image: "https://media.timeout.com/images/103144758/630/472/image.jpg")
-Attraction.create( name: "Red Line", location: "LES to UES, manhattan", description: "The most tourist thing to do in NYC", category: "Tour", image: "https://www.nycvb.com/wp-content/uploads/sites/6/2019/01/new-york-sightseeing-gray-line-800x445.jpg")
-Attraction.create( name: "MoMA", location: "Midtown", description: "See some of the most beautiful arts in the world!", category: "Museum", image: "https://static01.nyt.com/images/2019/10/18/arts/17moma-exhibits5/17moma-exhibits5-superJumbo.jpg")
-Attraction.create( name: "SHHHHHH", location: "Herald Square, 34th street", description: "Silent disco night. Don't you dare talk!", category: "Dancing", image: "https://i.ytimg.com/vi/CSUmopDW1GE/maxresdefault.jpg")
-Attraction.create( name: "Rockefeller Center Ice Rink", location: "Rockefellar Center", description: "Everybody who falls down are silently being judge", category: "Ice Skating", image: "https://imgs.6sqft.com/wp-content/uploads/2018/10/05143256/rockefeller-center-skating-rink.png")
-Attraction.create( name: "The Spy Museum", location: "405 45th street", description: "Once you go to this musuem, you come out as James Bond", category: "Museum", image: "https://washington.org/sites/default/files/ckeditor-images/decision-room_credit-international-spy-museum.jpg")
+Attraction.create( name: "Central Park", location: "Central Park, 56th ave", description: "Very relaxing walk in the park", hour: "afternoon", category: "Park", image: "https://media.npr.org/assets/img/2020/10/23/gettyimages-1221103600_wide-2017b49a7088bca4461597719ac0989cf1e027c2-s800-c85.jpg")
+Attraction.create( name: "Citi Field", location: "Flushing, NY", description: "Great stadium to see the Mets lose!", hour: "afternoon", category: "Sports stadium", image: "https://populous.com/wp-content/uploads/2018/01/POP_05_2647_00_N197_medium.jpg")
+Attraction.create( name: "Cooking with Karen", location: "304 32nd ave, manhattan", description: "Cook with your friends or your family members!", hour: "evening", category: "Cooking class", image: "https://www.travelwisconsin.com/uploads/medialibrary/e5/e5584597-ff55-4a52-b7cd-25896497e383-cooking-classes-header.jpg?preset=interior-slider-desktop")
+Attraction.create( name: "Museum of Natural History", location: "Upper West Side", description: "Where the dinosaurs and caveman lives", category: "Museum", hour: "afternoon", image: "https://www.amnh.org/var/ezflow_site/storage/images/media/amnh/images/join-and-support/join-support-redesign/plan-your-visit/plan-your-visit-revisions/amnh-plan-your-visit-dino-1024-512/2756409-2-eng-US/amnh-plan-your-visit-dino-1024-512.jpg")
+Attraction.create( name: "Ballroom Dancing", location: "Union square park, 14th street", description: "Dance your heart out", hour: "evening", category: "Park", image: "https://media.timeout.com/images/103144758/630/472/image.jpg")
+Attraction.create( name: "Red Line", location: "LES to UES, manhattan", description: "The most tourist thing to do in NYC", hour: "morning", category: "Tour", image: "https://www.nycvb.com/wp-content/uploads/sites/6/2019/01/new-york-sightseeing-gray-line-800x445.jpg")
+Attraction.create( name: "MoMA", location: "Midtown", description: "See some of the most beautiful arts in the world!", hour: "afternoon", category: "Museum", image: "https://static01.nyt.com/images/2019/10/18/arts/17moma-exhibits5/17moma-exhibits5-superJumbo.jpg")
+Attraction.create( name: "SHHHHHH", location: "Herald Square, 34th street", description: "Silent disco night. Don't you dare talk!", hour: "evening", category: "Dancing", image: "https://i.ytimg.com/vi/CSUmopDW1GE/maxresdefault.jpg")
+Attraction.create( name: "Rockefeller Center Ice Rink", location: "Rockefellar Center", description: "Everybody who falls down are silently being judge", category: "Ice Skating", hour: "evening", image: "https://imgs.6sqft.com/wp-content/uploads/2018/10/05143256/rockefeller-center-skating-rink.png")
+Attraction.create( name: "The Spy Museum", location: "405 45th street", description: "Once you go to this musuem, you come out as James Bond", category: "Museum", hour: "afternoon", image: "https://washington.org/sites/default/files/ckeditor-images/decision-room_credit-international-spy-museum.jpg")
 
 Restaurant.create(
     name: "Halal Guys",
@@ -103,4 +103,13 @@ Restaurant.create(
     image: "https://upload.wikimedia.org/wikipedia/commons/4/4a/NathansHotDog-3_%2848034232387%29.jpg"
 )
 
+Day.create(user_id: 1, date: "February 15th, 2021")
+
+DayRestaurant.create(day_id: 1, restaurant_id: 3)
+DayRestaurant.create(day_id: 1, restaurant_id: 6)
+DayRestaurant.create(day_id: 1, restaurant_id: 9)
+
+DayAttraction.create(day_id: 1, attraction_id: 6)
+DayAttraction.create(day_id: 1, attraction_id: 7)
+DayAttraction.create(day_id: 1, attraction_id: 8)
 

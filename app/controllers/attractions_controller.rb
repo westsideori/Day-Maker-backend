@@ -12,5 +12,10 @@ class AttractionsController < ApplicationController
         render json: attraction
     end
 
+    def beef
+        attractions = Attraction.where(hour: params[:hour])
+        render json: attractions
+    end
+
 
 end
