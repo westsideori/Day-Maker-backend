@@ -1,4 +1,5 @@
 class DayRestaurantsController < ApplicationController
+    
 
     def index
         day_restaurants = DayRestaurant.all

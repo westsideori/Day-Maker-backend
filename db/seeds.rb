@@ -1,6 +1,4 @@
 
-User.create( name: "Ori", username: "Ori123", password: "abc123")
-User.create( name: "June", username: "June123", password: "abc123")
 
 Attraction.create( name: "Central Park", location: "Central Park, 56th ave", description: "Very relaxing walk in the park", hour: "afternoon", category: "Park", image: "https://media.npr.org/assets/img/2020/10/23/gettyimages-1221103600_wide-2017b49a7088bca4461597719ac0989cf1e027c2-s800-c85.jpg")
 Attraction.create( name: "Citi Field", location: "Flushing, NY", description: "Great stadium to see the Mets lose!", hour: "afternoon", category: "Sports stadium", image: "https://populous.com/wp-content/uploads/2018/01/POP_05_2647_00_N197_medium.jpg")
@@ -103,13 +101,13 @@ Restaurant.create(
     image: "https://upload.wikimedia.org/wikipedia/commons/4/4a/NathansHotDog-3_%2848034232387%29.jpg"
 )
 
-Day.create(user_id: 1, date: "February 15th, 2021")
+# Day.create(user_id: 1, date: "February 15th, 2021")
 
-DayRestaurant.create(day_id: 1, restaurant_id: 3)
-DayRestaurant.create(day_id: 1, restaurant_id: 6)
-DayRestaurant.create(day_id: 1, restaurant_id: 9)
+# DayRestaurant.create(day_id: 1, restaurant_id: 3)
+# DayRestaurant.create(day_id: 1, restaurant_id: 6)
+# DayRestaurant.create(day_id: 1, restaurant_id: 9)
 
-DayAttraction.create(day_id: 1, attraction_id: 6)
-DayAttraction.create(day_id: 1, attraction_id: 7)
-DayAttraction.create(day_id: 1, attraction_id: 8)
+# DayAttraction.create(day_id: 1, attraction_id: 6)
+# DayAttraction.create(day_id: 1, attraction_id: 7)
+# DayAttraction.create(day_id: 1, attraction_id: 8)
 

@@ -1,4 +1,5 @@
 class DayAttractionsController < ApplicationController
+    
 
     def index
         day_attractions = DayAttraction.all

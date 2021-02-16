@@ -7,10 +7,13 @@ Rails.application.routes.draw do
   # resources :users
   root "welcome#index"
 
-  post "/login", to: "users#login"
   get "/users/:id", to: 'users#show'
+  get '/users/:id/days', to: 'users#days'
+  get "/me", to: "users#show"
+  post "/login", to: "users#login"
+  post "/signup", to: "users#signup"
   patch "/users/:id", to: 'users#update'
-  post "/users", to: 'users#create'
+  
 
   get "/restaurants", to: 'restaurants#index'
   get "/restaurants/:id", to: 'restaurants#show'
@@ -20,7 +23,7 @@ Rails.application.routes.draw do
   get "/attractions/:id", to: 'attractions#show'
   get "/attractions/hour/:hour", to: 'attractions#beef'
 
-  get "/days", to: "days#index"
+  # get "/days", to: "users#days"
   get "/days/:id", to: 'days#show'
   post "/days", to: 'days#create'
   delete "/days/:id", to: "days#destroy"
@@ -32,8 +35,6 @@ Rails.application.routes.draw do
   get "/day_attractions", to: "day_attractions#index"
   post "/day_attractions", to: "day_attractions#create"
   patch "/day_attractions/:id", to: "day_attractions#update"
-
-  get "/users/1/days", to: "users#days"
   
 
 

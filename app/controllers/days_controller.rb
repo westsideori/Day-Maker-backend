@@ -1,4 +1,5 @@
 class DaysController < ApplicationController
+    before_action :authenticate
 
     def index
         days = Day.all
@@ -31,6 +32,11 @@ class DaysController < ApplicationController
     def destroy
         day = Day.find(params[:id])
         day.destroy
+    end
+
+    def days
+        user_days = Day.where(user_id: @current_user.id)
+        render json: user_days
     end
 
     private
