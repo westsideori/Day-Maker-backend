@@ -14,7 +14,6 @@ class UsersController < ApplicationController
           # if they gave the right info, return that user object
           token = JWT.encode({ user_id: user.id }, 'mysecret', 'HS256')
           render json: { user: UserSerializer.new(user), token: token }
-          @current_user = user
         else
           # otherwise, return some error message
           render json: { errors: ["Invalid username or password"] }, status: :unauthorized
