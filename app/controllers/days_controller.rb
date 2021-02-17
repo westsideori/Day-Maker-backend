@@ -1,4 +1,5 @@
 class DaysController < ApplicationController
+    
 
     def index
         days = Day.all
@@ -34,7 +35,7 @@ class DaysController < ApplicationController
     end
 
     def days
-        user_days = Day.where(user_id: @current_user.id)
+        user_days = Day.where(user_id: params[:id])
         render json: user_days
     end
 
