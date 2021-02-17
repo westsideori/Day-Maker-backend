@@ -1,5 +1,4 @@
 class DaysController < ApplicationController
-    before_action :authenticate
 
     def index
         days = Day.all
