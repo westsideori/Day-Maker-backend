@@ -22,6 +22,8 @@ Attraction.create( name: "Gotham", location: "480 Baltic st, Brooklyn, NY", desc
 Attraction.create( name: "Walkathon", location: "Central Park, Manhattan", description: "Who're you kidding you're not going to this", category: "Outdoor activity", hour: "morning", image: "https://intlweloveu.org/wp-content/uploads/1995/05/20th-walkathon-3-3.jpg")
 Attraction.create( name: "Medieval times", location: "104 Somewhere ave, Staten Island", description: "You get to see two people jousting each other to the death", category: "Show", hour: "evening", image: "https://media.tacdn.com/media/attractions-splice-spp-674x446/07/3c/d0/27.jpg")
 Attraction.create( name: "Tomahawk", location: "Brooklyn, NY", description: "Be careful not to hit your friends!", category: "Bar activity", hour: "evening", image: "https://www.sunherald.com/latest-news/j21mm5/picture234088372/alternates/FREE_1140/Skal%20Axe%20Throwing.jpg")
+Attraction.create( name: "Cyclism", location: "Kissena Park, NY", description: "Biking in the sunset makes me cry", category: "Outdoor activity", hour: "morning", image: "https://fpdcc.com/wp-content/uploads/2018/09/bike-sunset-aug12.jpg")
+Attraction.create( name: "Beyond amazing", location: "577 Broadyway, Manhattan", description: "Harry Houdini himself couldn't measure up to this guy", category: "Magic show", hour: "evening", image:"https://christopherhowell.net/images/magic-show-party-2.jpg")
 
 #RESTAURANTS
 Restaurant.create( name: "Halal Guys", location: "Midtown", cuisine: "Middle Eastern", category: "lunch", image: "https://2prl1w38er123c2qhf3upjct-wpengine.netdna-ssl.com/img/upload/hero-image-1_2.jpg", description: "Delicious street food")
@@ -286,16 +288,76 @@ Restaurant.create(
     location: "58 E Union Square",
     image: "https://lh3.googleusercontent.com/proxy/LcPDoL1OxruX8nGo38JcDMSsTDuPigad4evVUp1r65VZNS9bOJix2jFcFxgzL_NMUIgeNkcdabYRE3io6Ryj3zumwplF5mAQ5JHbj7XPlDSJTX85eIUlWv7ju7oiiTuY"
 )
+Restaurant.create(
+    name: "Turnip house",
+    description: "Super Vegan restaurant!",
+    category: "breakfast",
+    cuisine: "Irish",
+    location: "90 W 55th ave, Midtown",
+    image: "https://thumbor.thedailymeal.com/NRHGt643_sqWueWutuPSNH3Hssw=/870x565/filters:focal(769x735:770x736)/https://www.thedailymeal.com/sites/default/files/2019/11/12/HERO_GA_Fox_and_Fig_yelp_Fox_and_Fig.jpg"
+)
+Restaurant.create(
+    name: "Mozior",
+    description: "Authentic Italian pizzas and pastas!",
+    category: "lunch",
+    cuisine: "Italian",
+    location: "78 Little Italy, Manhattan",
+    image: "https://www.micelis.restaurant/wp-content/uploads/2019/03/slider-universal-city-001.jpg"
+)
+Restaurant.create(
+    name: "SUGARFISH",
+    description: "Freshest fish you can get",
+    category: "dinner",
+    cuisine: "Japanese",
+    location: "33 E 20th st, Manhattan",
+    image: "https://pen-online.com/fr/wp-content/uploads/2018/12/18090359/42002761_1090361671127325_2154119987314146771_n-750x750.jpg"
+)
+Restaurant.create(
+    name: "Comcast",
+    description: "Elegant ambiance with sophisticated culinary art",
+    category: "dinner",
+    cuisine: "French",
+    location: "100 W 98th ave, UES",
+    image: "https://www.lerivagenyc.com/static/ui/gallery_le_rivage/rivage_party_4.jpeg.jpg"
+)
+Restaurant.create(
+    name: "Dr.Jekyall and Mr.Hyde",
+    description: "Dinner and a theater!!",
+    category: "lunch",
+    cuisine: "American",
+    location: "91 7th ave, Manhattan",
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Jekyll_Hyde_pub.JPG"
+)
+Restaurant.create(
+    name: "Restaurant",
+    description: "A restaurant",
+    category: "lunch",
+    cuisine: "Mongolian",
+    location: "Restaurant ave, Brooklyn",
+    image: "https://i.pinimg.com/originals/13/91/54/1391544ac0069c413743b93601b77960.jpg"
+)
+Restaurant.create(
+    name: "El Bajio",
+    description: "Best steak tacos and quesadillas you can get in NYC!",
+    category: "lunch",
+    cuisine: "Mexican",
+    location: "202 6th ave, Manhattan",
+    image: "https://i1.wp.com/www.eatthis.com/wp-content/uploads/2019/10/iowa-el-bajio-mexican.jpg?fit=1200%2C879&ssl=1"
+)
+Restaurant.create(
+    name: "Tomioka",
+    description: "Great authentic Cantonese cuisine",
+    category: "lunch",
+    cuisine: "Chinese",
+    location: "Chinatown, NY",
+    image: "https://i.pinimg.com/originals/ff/64/12/ff6412f9fe8daefe974625ad62b88fd8.jpg"
+)
 
-# Day.create(user_id: 1, date: "February 15th, 2021")
 
-# DayRestaurant.create(day_id: 1, restaurant_id: 3)
-# DayRestaurant.create(day_id: 1, restaurant_id: 6)
-# DayRestaurant.create(day_id: 1, restaurant_id: 9)
 
-# DayAttraction.create(day_id: 1, attraction_id: 6)
-# DayAttraction.create(day_id: 1, attraction_id: 7)
-# DayAttraction.create(day_id: 1, attraction_id: 8)
+
+#FOURSQUARE API DATA
+
 
 # client = Foursquare2::Client.new(:client_id => 'BMDHBF0RJGOQ4ZTFHL3YW1OQX3NVEWPODZRM3S4IYJHZVSY5', :client_secret => 'ZLBSHHINZUFSKXDDGVD3MJPLBGUHHCZQ4UD0DG40HOC3JK11')
 
