@@ -232,7 +232,7 @@ Restaurant.create(
     category: "lunch",
     cuisine: "Polish",
     location: "Poland",
-    image: "https://lh3.googleusercontent.com/proxy/mzRZtGe9x6lJg1ej1t9kIUY17vSapBDL2b_Ju5YZucWT-NmAMWfl7yT_7qTQNJNlYrqgWJtP8pN-7G6Sh9pW7ixMWck2WxJ02ztam17I3XPnX-VOix2ddwjSzJpDo5sH4H774MsfDRxzfGYp33TjTQU44a3mfhFMw5xHAuB8zNa6QtuPjY6oHwAZnP9w_LUL3swVwQbsWE8dcBwJxwJlIeuVnrRh9jSsVw"
+    image: "https://www.gannett-cdn.com/presto/2020/02/28/PDTF/1190b752-f873-4679-af7c-2f0fa0948841-Polonia12.jpg?width=660&height=495&fit=crop&format=pjpg&auto=webp"
 )
 
 Restaurant.create(
@@ -286,7 +286,7 @@ Restaurant.create(
     category: "dinner",
     cuisine: "Irish",
     location: "58 E Union Square",
-    image: "https://lh3.googleusercontent.com/proxy/LcPDoL1OxruX8nGo38JcDMSsTDuPigad4evVUp1r65VZNS9bOJix2jFcFxgzL_NMUIgeNkcdabYRE3io6Ryj3zumwplF5mAQ5JHbj7XPlDSJTX85eIUlWv7ju7oiiTuY"
+    image: "https://img.hoodline.com/uploads/story/image/117000/Del_Frisco_s.jpg"
 )
 Restaurant.create(
     name: "Turnip house",
