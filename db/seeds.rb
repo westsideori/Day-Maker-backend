@@ -21,6 +21,7 @@ Attraction.create( name: "Steerike", location: "203 13th ave, Manhattan, NY", de
 Attraction.create( name: "Gotham", location: "480 Baltic st, Brooklyn, NY", description: "It's way better than Robinhood", category: "Archery class", hour: "afternoon", image: "https://www.scoutjr.com/wp-content/uploads/2017/10/19956004_1629872883690473_1302703331743384077_o.jpg")
 Attraction.create( name: "Walkathon", location: "Central Park, Manhattan", description: "Who're you kidding you're not going to this", category: "Outdoor activity", hour: "morning", image: "https://intlweloveu.org/wp-content/uploads/1995/05/20th-walkathon-3-3.jpg")
 Attraction.create( name: "Medieval times", location: "104 Somewhere ave, Staten Island", description: "You get to see two people jousting each other to the death", category: "Show", hour: "evening", image: "https://media.tacdn.com/media/attractions-splice-spp-674x446/07/3c/d0/27.jpg")
+Attraction.create( name: "Tomahawk", location: "Brooklyn, NY", description: "Be careful not to hit your friends!", category: "Bar activity", hour: "evening", image: "https://www.sunherald.com/latest-news/j21mm5/picture234088372/alternates/FREE_1140/Skal%20Axe%20Throwing.jpg")
 
 #RESTAURANTS
 Restaurant.create( name: "Halal Guys", location: "Midtown", cuisine: "Middle Eastern", category: "lunch", image: "https://2prl1w38er123c2qhf3upjct-wpengine.netdna-ssl.com/img/upload/hero-image-1_2.jpg", description: "Delicious street food")
@@ -241,50 +242,50 @@ Restaurant.create(
     image: "https://cdn.vox-cdn.com/thumbor/oerrZeFsDAG389E3kiPNQiP0mgs=/0x0:2048x1360/1200x675/filters:focal(861x517:1187x843)/cdn.vox-cdn.com/uploads/chorus_image/image/65023758/JDInterior.0.jpg"
 )
 
-# Restaurant.create(
-#     name: "",
-#     description: "",
-#     category: "",
-#     cuisine: "",
-#     location: "",
-#     image: ""
-# )
+Restaurant.create(
+    name: "Wimbleton",
+    description: "Splendid fish and chips place",
+    category: "lunch",
+    cuisine: "American",
+    location: "94 W 78th ave, UES",
+    image: "https://grandbaby-cakes.com/wp-content/uploads/2014/09/Fish-and-Chips-Recipe-1-500x375.jpg"
+)
 
-# Restaurant.create(
-#     name: "",
-#     description: "",
-#     category: "",
-#     cuisine: "",
-#     location: "",
-#     image: ""
-# )
+Restaurant.create(
+    name: "Hey Mama",
+    description: "Soul food for your soul",
+    category: "dinner",
+    cuisine: "American",
+    location: "103 Chaplen ave, Bronx",
+    image: "https://media.timeout.com/images/102436459/image.jpg"
+)
 
-# Restaurant.create(
-#     name: "",
-#     description: "",
-#     category: "",
-#     cuisine: "",
-#     location: "",
-#     image: ""
-# )
+Restaurant.create(
+    name: "Mesh",
+    description: "Healthy and delicious!",
+    category: "breakfast",
+    cuisine: "American",
+    location: "23-11 Sowex ave, Queens",
+    image: "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/beetroot-hummus-23bae4e.jpg?quality=90&resize=500%2C454"
+)
 
-# Restaurant.create(
-#     name: "",
-#     description: "",
-#     category: "",
-#     cuisine: "",
-#     location: "",
-#     image: ""
-# )
+Restaurant.create(
+    name: "Good Burger",
+    description: "Best burger joint in the world",
+    category: "lunch",
+    cuisine: "American",
+    location: "Good st, Manhattan",
+    image: "https://static.hollywoodreporter.com/sites/default/files/2019/07/good_burger_pop_up_-928x523.jpg"
+)
 
-# Restaurant.create(
-#     name: "",
-#     description: "",
-#     category: "",
-#     cuisine: "",
-#     location: "",
-#     image: ""
-# )
+Restaurant.create(
+    name: "Breonch",
+    description: "Best Tomahawk steak you can imagine",
+    category: "dinner",
+    cuisine: "Irish",
+    location: "58 E Union Square",
+    image: "https://lh3.googleusercontent.com/proxy/LcPDoL1OxruX8nGo38JcDMSsTDuPigad4evVUp1r65VZNS9bOJix2jFcFxgzL_NMUIgeNkcdabYRE3io6Ryj3zumwplF5mAQ5JHbj7XPlDSJTX85eIUlWv7ju7oiiTuY"
+)
 
 # Day.create(user_id: 1, date: "February 15th, 2021")
 
