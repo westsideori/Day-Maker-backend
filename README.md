@@ -1,24 +1,49 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# DayMaker (backend)
 
-Things you may want to cover:
+DayMaker is a day-planning application that creates an itinerary of restaurants and activities at the click of a button.
 
-* Ruby version
+## Installation
 
-* System dependencies
+Ruby version: 2.6.1
 
-* Configuration
+Run bundle install to install all Ruby gems and dependencies.
 
-* Database creation
+```zsh
+bundle install
+```
 
-* Database initialization
+Run rails db:create to set up database. This app uses Postgresql for the database.
 
-* How to run the test suite
+```zsh
+rails db:create
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Run rails db:migrate to create tables and migrate them to the database.
 
-* Deployment instructions
+```zsh
+rails db:migrate
+```
 
-* ...
+Run rails db:seed to seed the database with the data necessary to run the app.
+
+```zsh
+rails db:seed
+```
+
+## Usage
+
+To run the backend, run rails s. (Make sure the backend is running on a different port than the frontend)
+
+```zsh
+rails s
+```
+
+## Roadmap
+
+Using Foursquare API to pull in real venue data.
+
+## Authors and acknowledgment
+
+Built with passion by Ori Markowitz & June Kang 2021
